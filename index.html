@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trivia Game Homework</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white game-title"></h4>
+              <p class="game-description text-white">This is a simple trivia game created by Tom Sampson for UT Coder Camp 2018 April M-W class.  It demonstrates the use of a timer using Javascript, functions within an array, CSS effects, and using flexbox and bootstrap together.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Created Using</h4>
+              <ul class="list-unstyled text-white"><li>Javascript</li><li>jQuery</li><li>Bootstrap 4.1.1</li><li>HTML 5</li><li>CSS 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span><h3 id="yellow">About</h3></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main role="main box-shadow--8dp">
+        <div class="parent-container m-3 pb-3 rounded bg-radial">
+            <div class="container">
+                <div class="row">
+                    <div class="col m-2 pb-2 rounded answer text-center box-shadow--8dp"><h1>Math Trivia Quiz</h1>
+                        <div class="col m-2 pb-2 rounded article box-shadow--8dp"><div class="status"></div>
+                            <div class="col rounded timer-bar  box-shadow--8dp" id="timer-bar">
+                                <div class="col rounded timer-bar  box-shadow--8dp" id="timer-bar-active"></div>
+                            </div>
+                            <div class="col m-2 pb-2 rounded sub-article text-left"></div>
+                            <div id="answerblock"></div>
+                            <div class="start-button text-center"><a href="#" title="Start" id="play" class="btn btn-success btn-lg box-shadow--8dp">Play</a></div>
+                            <div class="start-button text-center"><a href="#" title="Play Again?" id="playAgain" class="btn btn-success btn-lg box-shadow--8dp">Play Again?</a></div>
+                        </div>
+                    </div>
+                    <div class="col m-2 pb-2 rounded question text-center box-shadow--8dp"><h1>Blackboard</h1>
+                        <div class="col m-2 pb-2 rounded console box-shadow--8dp">
+                            <div class="col m-2 pb-2 rounded sub-article">
+                                <div class="number-parent d-flex">
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </main>
+    <footer>
+      <div class="container">
+      </div>
+    </footer>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then my stuff -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script> -->
+    <script src="js/questions.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
